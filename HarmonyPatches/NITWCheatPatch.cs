@@ -14,6 +14,9 @@ namespace NITWCheat.HarmonyPatches
         {
             __instance.jump = 30;
             __instance.runSpeedOverride = 80;
+            __instance.deathWalkSpeed = 80;
+            __instance.walkSpeed = 80;
+            __instance.canJump = true;
         }
     }
 }
