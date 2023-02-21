@@ -15,7 +15,6 @@ namespace MoonJump
             Logger.LogInfo($"Plugin {"com.archiverxp.nitwcheats"} is loaded!");
             SceneManager.LoadScene("BusStation");
             var harmony = new Harmony("com.archiverxp.nitwcheats");
-            Harmony.DEBUG = true;
             var assembly = Assembly.GetExecutingAssembly(); //copy and pasted from docs
             harmony.PatchAll(assembly);
         }

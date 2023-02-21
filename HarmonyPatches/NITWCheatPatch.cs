@@ -1,5 +1,6 @@
 using HarmonyLib;
 using System.Reflection;
+using UnityEngine;
 
 namespace NITWCheat.HarmonyPatches
 {
@@ -17,6 +18,11 @@ namespace NITWCheat.HarmonyPatches
             __instance.deathWalkSpeed = 80;
             __instance.walkSpeed = 80;
             __instance.canJump = true;
+
+            if (Input.GetKey(KeyCode.K))
+            {
+                __instance.speedY = 8;
+            }
         }
     }
 }
